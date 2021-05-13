@@ -9,7 +9,7 @@ function computeInitialCounter() {
 }
 
 
-function App() {
+function PracticeUseState() {
 
   const [counter, setCounter] = useState( () => {
     return computeInitialCounter();
@@ -64,4 +64,4 @@ function increment() {
 }
 
 
-export default App;
+export default PracticeUseState;

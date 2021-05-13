@@ -5,7 +5,7 @@ import './App.css';
 
 
 
-function App() {
+function PracticeUseEffect() {
   const [type, setType] = useState('users');
   const [data, setData] = useState([])
   const [pos, setPos] = useState({
@@ -60,4 +60,4 @@ useEffect( () => {
 }
 
 
-export default App;
+export default PracticeUseEffect;
