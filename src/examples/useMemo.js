@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import './App.css';
 
 
-function complexComputed(num) {
+function PracticeUseMemo(num) {
   let i = 0;
   while (i<100000000) i++;
   return num * 2;
@@ -45,4 +45,4 @@ function App() {
 }
 
 
-export default App;
+export default PracticeUseMemo;
