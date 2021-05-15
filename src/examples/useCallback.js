@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import './App.css';
 
-import ItemsList from './examples/itemsList'
+import ItemsList from './itemsList'
 
 
-function App() {
+function PracticeUseCallback() {
  const [colored, setColored] = useState(false);
  const [count, setCount] = useState(1);
 
@@ -12,10 +12,9 @@ const styles = {
   color: colored ? 'darkred' : 'black'
 }
 
-const generateItemsFromAPI = useCallback( 
-  () => {
-    return new Array(count).fill('').map((_,i) => `Елемент ${i + 1}`)
-  }, [count]
+const generateItemsFromAPI = useCallback( () => {
+  return new Array(count).fill('').map((_,i) => `Елемент ${i + 1}`)
+}, [count]
 ) 
 
  
@@ -37,4 +36,4 @@ const generateItemsFromAPI = useCallback(
 }
 
 
-export default App;
+export default PracticeUseCallback;
