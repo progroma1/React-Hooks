@@ -15,8 +15,13 @@ function useInput(initialValue) {
     setValue(event.target.value)
   }
 
+  const clear = () => {
+    setValue('');
+  }
   return {
-    value, onChange
+   bind: { value, onChange},
+   value,
+   clear
   }
 
 }
@@ -29,8 +34,9 @@ function App() {
 
   return (
     <div div className={'container pt-3'}>
-      <input type="text" {...input} />
-      <input type="text" {...lastName} />
+      <input type="text" {...input.bind} />
+      <button className="btn btn-warning" 
+      onClick={ () => input.clear() }> Очистка </button>
       <hr />
       <h1>{input.value} {lastName.value}</h1>
     </div>
