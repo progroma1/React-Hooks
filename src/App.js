@@ -4,9 +4,7 @@ import Alert from './alert/Alert';
 import {AlertProvider} from './alert/AlertContext'
 
 
-
 function App() {
-
   return (
 <AlertProvider>
     <div div className={'container'}>
@@ -15,9 +13,6 @@ function App() {
     </div>
 </AlertProvider> 
   )
-
-
 }
-
 
 export default App;
